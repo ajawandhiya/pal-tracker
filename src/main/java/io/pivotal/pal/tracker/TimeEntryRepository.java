@@ -7,6 +7,8 @@ public interface TimeEntryRepository {
 
     public TimeEntry find (long timeEntryId);
 
+    TimeEntry find(Long id);
+
     public List list();
 
     public void delete (long timeEntryId);
@@ -14,5 +16,7 @@ public interface TimeEntryRepository {
     public TimeEntry update (long eq, TimeEntry any);
 
 
+    TimeEntry update(Long id, TimeEntry timeEntry);
 
+    void delete(Long id);
 }
