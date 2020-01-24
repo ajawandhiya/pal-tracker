@@ -23,6 +23,12 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository{
     public TimeEntry find(long timeEntryId ){
         return timeEntryHashMap.get(timeEntryId);
     }
+
+    @Override
+    public TimeEntry find(Long id) {
+        return null;
+    }
+
     public TimeEntry update(long eq,TimeEntry any ){
         if (timeEntryHashMap.get(eq)== null) {
                 return null;
@@ -38,6 +44,17 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository{
             return timeEntry;
         }
     }
+
+    @Override
+    public TimeEntry update(Long id, TimeEntry timeEntry) {
+        return null;
+    }
+
+    @Override
+    public void delete(Long id) {
+
+    }
+
     public void delete(long timeEntryId ) {
         timeEntryHashMap.remove(timeEntryId);
     }
