@@ -3,7 +3,7 @@ applications:
   - name: pal-tracker
     path: build/libs/pal-tracker.jar
     routes:
-    -route:  pal-tracker-abhishek-jawandhiya.cfapps.io
+    -route:  pal-tracker-abhishek-jawandhiya-pivotal.cfapps.io
     env:
       WELCOME_MESSAGE: hello
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
